@@ -13,7 +13,8 @@
 1. Diana.Lu
    
    *https://diana.lu/*
-   *Los elementos gráficos del portafolio son limpios y permiten identificar rápidamente la información que se está mostrando.
+   * Los elementos gráficos del portafolio son limpios y permiten identificar rápidamente la información que se está mostrando.
+     
   ![Diana Lu Portfolio](https://github.com/Isidoramunoz/Portafolio/assets/141790888/a4fe1883-af1d-4788-884e-c5b6c55985ac)
 
 2. Chic. And Geek
@@ -24,6 +25,7 @@
   ![Chic  And Geek](https://github.com/Isidoramunoz/Portafolio/assets/141790888/6c97a28e-1cd5-41dd-b174-afd660789352)
 
 3. Pam
+   
    *https://thisispam.com/?ref=godly*
    * Es atractivo visualmente y los elementos que se utilizan, tanto animaciones como videos, se complementan con la información aportando a su comprensión.
      
@@ -37,16 +39,20 @@
     ![Predesign™ - Branding   Visual Identity Design for Startups](https://github.com/Isidoramunoz/Portafolio/assets/141790888/16401051-58df-4234-b83b-7082e29a3e36)
 
 5. Michael Wandelmaier
+   
    *https://wandelmaier.com/?ref=onepagelove*
    * La págia es clara, se puede recorrer fácilmente ya que no tiene tantos elementos.
 
     ![Michael Wandelmaier - Head of Design Strategy   Craft at MetaLab](https://github.com/Isidoramunoz/Portafolio/assets/141790888/77a0bc6a-e459-4604-b58c-5226686111f6)
 
 6. Spring/Summer
+   
    *https://springsummer.dk/category*
     * Este sitio web muestra fácimente en la página principal todos los proyectos que se quieren mostrar. Sin embargo, algunas animaciones confunden por donde se debe seguir la lectura.
    
    ![Spring_Summer _ Copenhagen](https://github.com/Isidoramunoz/Portafolio/assets/141790888/ff21404f-be11-41d6-a4f0-1fe5926b2bef)
+
+
 
 **Referentes**
 
