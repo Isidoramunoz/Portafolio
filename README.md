@@ -13,6 +13,7 @@
 1. Diana.Lu
    
    *https://diana.lu/*
+   
    * Los elementos gráficos del portafolio son limpios y permiten identificar rápidamente la información que se está mostrando.
      
   ![Diana Lu Portfolio](https://github.com/Isidoramunoz/Portafolio/assets/141790888/a4fe1883-af1d-4788-884e-c5b6c55985ac)
