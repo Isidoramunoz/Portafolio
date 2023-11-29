@@ -24,18 +24,22 @@
     <!-- Meta Tags Generated with https://metatags.io -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap">
+
     <style>
         /* Estilos generales */
          body {
-            font-family: Arial, sans-serif;
+            font-family: 'Inconsolata', monospace; 
             margin: 0;
             padding: 0;
             position: relative;
             display: flex;
             min-height: 100vh;
             flex-direction: column;
-            background-color: #333;
-            color: white;
+            background-color: #f6f6f4;
+            color: #712620;
             overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
             overflow-y: auto; /* Permite el desplazamiento vertical */
         }
@@ -45,12 +49,25 @@
             padding: 1em;
             width: 100%;
         }
+            svg {
+            color: #e1e2a5;
+            width: 150px; /* Ajusta el ancho del ícono según sea necesario */
+            height: 150px; /* Ajusta la altura del ícono según sea necesario */
+            margin-top: 180pt;
+            margin-bottom: 1pt;
+            margin-right: 770pt;
+        
+        }
+
 
         h1 {
-            margin: 380px 0 0 70pt;
+            color: #335868;
+            margin: 1px 0 0 70pt;
             font-size: 50pt;
             align-self: flex-start;
             text-align: left;
+            font-family: 'Karla', sans-serif;
+
         }
 
         h2 {
@@ -62,8 +79,11 @@
         }
 
         h3 {
+            color: #335868;
             margin: 350px 0 0 90pt;
-            font-size: 20pt;
+            font-size: 35pt;
+            font-family: 'Karla', sans-serif;
+
         }
 
         p {
@@ -84,7 +104,7 @@
         }
 
         nav a {
-            color: white;
+            color: #712620;
             text-decoration: none;
             padding: 10px;
             margin: 0 10px;
@@ -93,7 +113,7 @@
         }
 
         nav a:hover {
-            background-color: #777;
+            background-color: #ebebe7;
         }
 
         section {
@@ -101,8 +121,8 @@
         }
 
         footer {
-            color: white;
-            background: transparent;
+            color: #712620;
+            background: #e1e2a5;
             text-align: center;
             margin-top: auto;
         }
@@ -112,13 +132,14 @@
             display: flex;
             justify-content: center;
             margin-top: 40px;
+            margin-bottom: 25px;
         }
 
         .contact-card {
             width: 20%;
             margin: 0 10px;
             padding: 15px;
-            background-color: #444;
+            background-color: #d6e3fc;
             border-radius: 10px;
             text-align: center;
             align-items: center;
@@ -147,7 +168,7 @@
         .project-card {
             width: 200px; /* Ancho fijo */
             height: 220px; /* Alto fijo */
-            background-color: #555;
+            background-color: #ebebe7;
             border-radius: 10px;
             padding: 10px; /* Ajusta el padding según necesites */
             cursor: pointer;
@@ -175,13 +196,13 @@
         }
 
         .modal-content {
-           background-color: #555;
+           background-color: #ebebe7;
            margin: 5% auto;
            padding: 20px;
-           border: 1px solid #888;
+           border: 1px solid #ebebe7;
            width: 80%;
            border-radius: 10px;
-           color: white;
+           color: #712620;
            max-width: 600px;
           text-align: left; /* Alinear el texto a la izquierda */
 
@@ -195,9 +216,9 @@
         }
 
         .close {
-            color: #aaa;
+            color: #712620;
             float: right;
-            font-size: 28px;
+            font-size: 35px;
             font-weight: bold;
         }
 
@@ -241,6 +262,20 @@
 
         }
 
+        /* Estilos para el contenido del modal */
+         #modal-content {
+            margin-left: 10px; /* Ajusta el margen izquierdo según sea necesario */
+        }
+       
+        #modal-content h2 {
+            margin: 0; /* Elimina el margen superior e inferior del nombre */
+        }
+
+
+       #modal-content p {
+           margin-top: 10px; /* Agrega un margen superior al texto para separarlo del nombre */
+        }
+
 
         
     </style>
@@ -257,21 +292,26 @@
     </nav>
 
     <header>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flower3" viewBox="0 0 16 16">
+            <path d="M11.424 8c.437-.052.811-.136 1.04-.268a2 2 0 0 0-2-3.464c-.229.132-.489.414-.752.767C9.886 4.63 10 4.264 10 4a2 2 0 1 0-4 0c0 .264.114.63.288 1.035-.263-.353-.523-.635-.752-.767a2 2 0 0 0-2 3.464c.229.132.603.216 1.04.268-.437.052-.811.136-1.04.268a2 2 0 1 0 2 3.464c.229-.132.489-.414.752-.767C6.114 11.37 6 11.736 6 12a2 2 0 1 0 4 0c0-.264-.114-.63-.288-1.035.263.353.523.635.752.767a2 2 0 1 0 2-3.464c-.229-.132-.603-.216-1.04-.268zM9 4a1.468 1.468 0 0 1-.045.205c-.039.132-.1.295-.183.484a12.88 12.88 0 0 1-.637 1.223L8 6.142a21.73 21.73 0 0 1-.135-.23 12.88 12.88 0 0 1-.637-1.223 4.216 4.216 0 0 1-.183-.484A1.473 1.473 0 0 1 7 4a1 1 0 1 1 2 0M3.67 5.5a1 1 0 0 1 1.366-.366 1.472 1.472 0 0 1 .156.142c.094.1.204.233.326.4.245.333.502.747.742 1.163l.13.232a21.86 21.86 0 0 1-.265.002 12.88 12.88 0 0 1-1.379-.06 4.214 4.214 0 0 1-.51-.083 1.47 1.47 0 0 1-.2-.064A1 1 0 0 1 3.67 5.5m1.366 5.366a1 1 0 0 1-1-1.732c.001 0 .016-.008.047-.02.037-.013.087-.028.153-.044.134-.032.305-.06.51-.083a12.88 12.88 0 0 1 1.379-.06c.09 0 .178 0 .266.002a21.82 21.82 0 0 1-.131.232c-.24.416-.497.83-.742 1.163a4.1 4.1 0 0 1-.327.4 1.483 1.483 0 0 1-.155.142zM9 12a1 1 0 0 1-2 0 1.476 1.476 0 0 1 .045-.206c.039-.131.1-.294.183-.483.166-.378.396-.808.637-1.223L8 9.858l.135.23c.241.415.47.845.637 1.223.083.19.144.352.183.484A1.338 1.338 0 0 1 9 12m3.33-6.5a1 1 0 0 1-.366 1.366 1.478 1.478 0 0 1-.2.064c-.134.032-.305.06-.510.083-.412.045-.898.061-1.379.06-.09 0-.178 0-.266-.002l.131-.232c.24-.416.497-.83.742-1.163a4.1 4.1 0 0 1 .327-.4c.046-.05.085-.086.114-.11.026-.022.04-.03.041-.032a1 1 0 0 1 1.366.366zm-1.366 5.366a1.494 1.494 0 0 1-.155-.141 4.225 4.225 0 0 1-.327-.4A12.88 12.88 0 0 1 9.74 9.16a22 22 0 0 1-.13-.232l.265-.002c.48-.001.967.015 1.379.06.205.023.376.051.51.083.066.016.116.031.153.044l.048.02a1 1 0 1 1-1 1.732zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+        </svg>
+
         <h1>Portafolio diseño integral</h1>
-        <h2>Isidora Muñoz, Diseño UC</h2>
+        <h2>Isidora Muñoz, Diseño UC.</h2>
     </header>
 
     <div id="Presentación">
         <!-- Contenido de la sección Presentación -->
         <h3>Sobre mí</h3>
-        <p>Esta es una breve descripción sobre mí y mi trabajo en diseño integral. Puedes incluir información relevante, como tus habilidades, experiencia, y cualquier detalle que desees destacar.</p>
+        <p>¡Hola! Me llamo Isidora y estoy en cuarto año de diseño en la Universidad Católica.</p>
     </div>
 
 
     <div id="Proyectos">
         <!-- Contenido de la sección Proyectos -->
         <h3>Proyectos Recientes</h3>
-        <p>Aquí puedes agregar un título y una descripción para destacar tus proyectos recientes. Incluye información relevante y cualquier detalle que desees compartir con tus visitantes.</p>
+        <p>A continuación puedes ver una selección de proyectos que he realizado a lo largo de mi carrera universitaria.</p>
 
         <!-- Tarjetas de proyectos -->
         <div id="project-container" class="contact-container">
@@ -383,6 +423,7 @@ function createProjectCard(project) {
 }
 
 // Función para abrir el modal con la información detallada
+// Función para abrir el modal con la información detallada
 function openModal(project) {
     const modal = document.getElementById('myModal');
     const modalContent = document.getElementById('modal-content');
@@ -390,9 +431,15 @@ function openModal(project) {
     // Limpiar el contenido previo del modal
     modalContent.innerHTML = '';
 
-    // Agregar el nombre y abstract al modal
+    // Agregar el nombre al modal
     modalContent.innerHTML += `<h2>${project.nombre}</h2>`;
-    modalContent.innerHTML += `<p>${project.abstract}</p>`;
+
+    // Agregar el texto al modal
+    if (project.texto) {
+        modalContent.innerHTML += `<p>${project.texto}</p>`;
+    } else {
+        console.warn(`El proyecto "${project.nombre}" no tiene texto definido.`);
+    }
 
     // Agregar todas las fotos al modal dentro de un contenedor
     if (project.fotos && project.fotos.length > 0) {
@@ -409,13 +456,6 @@ function openModal(project) {
         modalContent.appendChild(photoContainer);
     } else {
         console.warn(`El proyecto "${project.nombre}" no tiene imágenes definidas.`);
-    }
-
-    // Agregar el texto al modal
-    if (project.texto) {
-        modalContent.innerHTML += `<p>${project.texto}</p>`;
-    } else {
-        console.warn(`El proyecto "${project.nombre}" no tiene texto definido.`);
     }
 
     // Mostrar el modal
