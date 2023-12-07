@@ -1,0 +1,60 @@
+[
+    {
+        "nombre": "Colección de fanzines",
+        "fotos": ["https://raw.githubusercontent.com/Isidoramunoz/imunoz/main/img/1.jpg", "https://raw.githubusercontent.com/Isidoramunoz/imunoz/main/img/1a.jpg"],
+        "abstract": "Colección de fanzines para la comuna de El Bosque.",
+        "texto": "Colección de tres fanzines enmarcados en el rediseño del stand de educación medioambiental de la comuna de El Bosque. El proyecto nace de una alianza con Puentes UC en conjunto con el curso Taller Producto. Proyecto coautoral."
+    },
+
+     {
+        "nombre": "Personaliza tu experiencia",
+        "fotos": ["https://raw.githubusercontent.com/Isidoramunoz/imunoz/main/img/2.jpg", "https://raw.githubusercontent.com/Isidoramunoz/imunoz/main/img/2a.jpg"],
+        "abstract": "Diseño de productos para CIRCULAR PET.",
+        "texto": "Proyecto realizado en el curso Taller Calidad I para la marca de alimento de perro CIRCULAR PET. La propuesta consta del diseño de un nuevo producto para la marca, acompañado de material de apoyo para redes sociales. Proyecto coautoral."
+    },
+
+    {
+        "nombre": "Tallando la historia",
+        "fotos": ["https://raw.githubusercontent.com/Isidoramunoz/imunoz/main/img/3.jpg", "https://raw.githubusercontent.com/Isidoramunoz/imunoz/main/img/3a.jpg"],
+        "abstract": "Audiolibro didáctico infantil para Artesanía UC.",
+        "texto": "Audiolibro infantil sobre la vida del artesano en madera José Neihual. El proyecto se realiza en el curso Taller Calidad I en conjunto con Artesanía UC, con el fin de generar material para la Muestra de Artesanía del año 2021. Proyecto coautoral."
+    },
+
+    {
+        "nombre": "WINX",
+        "fotos": ["https://raw.githubusercontent.com/Isidoramunoz/imunoz/main/img/4.jpg", "https://raw.githubusercontent.com/Isidoramunoz/imunoz/main/img/4a.jpg"],
+        "abstract": "Banca de madera.",
+        "texto": "Banca de madera para el curso Estructuras y materiales. El desafío era diseñar y construir una banca utilizando solo dos planchas de terciado, amarracables y remaches pop. Proyecto coautoral."
+    },
+
+    {
+        "nombre": "Uva & Denim",
+        "fotos": ["https://raw.githubusercontent.com/Isidoramunoz/imunoz/main/img/5.jpg", "https://raw.githubusercontent.com/Isidoramunoz/imunoz/main/img/5a.jpg"],
+        "abstract": "Metodología de teñido para LOLITA POCKET.",
+        "texto": "Metodología de teñido en algodón utilizando orujo, subproducto de la industria del vino. El proyecto nace de una alianza con la marca chilena LOLITA POCKET y el curso Taller calidad II, con el fin de generar propuestas que le aporten a la marca mayores posibilidades en sustentabilidad."
+    },
+
+    {
+        "nombre": "STRNG",
+        "fotos": ["https://raw.githubusercontent.com/Isidoramunoz/imunoz/main/img/6.jpg", "https://raw.githubusercontent.com/Isidoramunoz/imunoz/main/img/6a.jpg"],
+        "abstract": "Colección de tres prendas upcycling.",
+        "texto": "Diseño y confección de tres prendas upcycling bajo el concepto MOVILIZAR. La colección es parte del curso Taller Mercado I, y la construcción de cada prenda fue a partir de un pantalón."
+    
+    },
+
+     {
+        "nombre": "Incongruente",
+        "fotos": ["https://raw.githubusercontent.com/Isidoramunoz/imunoz/main/img/7.jpg", "https://raw.githubusercontent.com/Isidoramunoz/imunoz/main/img/7a.jpg"],
+        "abstract": "Colección de indumentaria a partir de retazos tejidos.",
+        "texto": "Colección de tres prendas para el curso Taller Mercado I, bajo el encargo de crear un concepto propio en técnica libre. Cada prenda fue construida a partir de retazos de distintas telas que fueron unidos para utilizarlos en tejido de punto. "
+    },
+   
+    {
+        "nombre": "Colección de calendarios",
+        "fotos": ["https://raw.githubusercontent.com/Isidoramunoz/imunoz/main/img/8.jpg", "https://raw.githubusercontent.com/Isidoramunoz/imunoz/main/img/8a.jpg"],
+        "abstract": "Colección de calendarios para la comuna de El Bosque.",
+        "texto": "Diseño de calendarios domésticos para la comuna de El bosque mediante una alianza con Puentes UC, en el marco del curso Diseño de Información. La propuesta nace con el fin de visibilizar la importancia de tomar medidas de precaución frente a las distintas emergencias meteorológicas en las distintas estaciones del año."
+    }
+     
+
+]
