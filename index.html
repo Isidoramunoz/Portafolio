@@ -129,6 +129,7 @@
             margin-bottom: 10px;
         }
 
+
         #Contacto {
             text-align: center;
             display: flex;
@@ -174,29 +175,30 @@
          #project-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-            gap: 40px;
+            gap: 60px;
             row-gap: 40px;
             justify-items: center; 
             align-items: start; 
             margin-left: 75pt; 
             margin-right: 75pt;
+            margin-top: 40px;
 
         }
 
         .project-card {
-            width: 200px; 
-            height: 220px; 
+            width: 250px; 
+            height: 320px; 
             background-color: #ebebe7;
             border-radius: 10px;
             padding: 10px; 
             cursor: pointer;
-
         }
         
         .project-card h4,
         .project-card p {
             margin: 5px 0;
         }
+
 
         .modal {
             display: none;
@@ -213,7 +215,7 @@
         }
 
         .modal-content {
-           background-color: #ebebe7;
+           background-color: #f6f6f4;
            margin: 5% auto;
            padding: 20px;
            border: 1px solid #ebebe7;
@@ -248,7 +250,12 @@
         .project-image-container {
             overflow: hidden; 
             border-radius: 10px; 
-            height: 120px; 
+            height: 240px; 
+            width: 240px;
+            margin-top: 5px;
+            margin-right: 5px;
+            margin-left: 5px;
+
         }
 
         .project-image-container img {
@@ -261,6 +268,7 @@
             width: 100%; 
             height: auto; 
             margin-bottom: 10px; 
+
         }
 
         
@@ -287,13 +295,117 @@
 
         #modal-content h2 {
             margin: 0;
+            font-weight: bold;
+            margin-left: 10px;
         }
 
 
         #modal-content p {
-            margin-top: 10px; /
-            margin-left: 0; /
+            margin-top: 10px; 
+            margin-right: 10px; 
+            margin-left: 10px;
         }
+
+        .project-card h4, #modal-content h2 {
+            color: #335868;
+            font-family: 'Karla', sans-serif;
+
+        }
+
+        #Presentación svg, #Proyectos svg {
+            color: #e1e2a5;
+            width: 100px; 
+            height: 100px; 
+            margin-right: 1px;
+            margin-bottom: -10px;
+        }
+
+
+       #Presentación, #Proyectos {
+           margin-left: 75pt;
+           margin-right: 75pt;
+           margin-top: 40px; 
+       }
+
+
+        #Presentación h3, #Proyectos h3 {
+           color: #335868;
+           font-size: 35pt;
+           font-family: 'Karla', sans-serif;
+           margin-top: -90px; 
+         
+        }
+
+         #masInformacionBtn {
+            margin-top: 35px;
+            margin-left: 120px;
+            padding: 10px;
+            background-color: #ebebe7;
+            color: #335868;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Karla', sans-serif;
+            font-weight: bold;
+            font-size: 12pt;
+        }
+
+        #modalMasInformacion {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: ebebe7;
+            padding-top: 60px;
+        }
+
+        #modalContentMasInformacion {
+            background-color: #f6f6f4;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #ebebe7;
+            width: 80%;
+            border-radius: 10px;
+            color: #712620;
+            max-width: 1000px;
+            text-align: left;
+        
+
+        #modalContentMasInformacion p {
+            margin-bottom: 5px;
+            margin-left: 10px;
+        }
+
+        #modalCloseMasInformacion {
+            color: #712620;
+            float: right;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #modalCloseMasInformacion:hover,
+        #modalCloseMasInformacion:focus {
+            color: black;
+            text-decoration: none;
+        }
+
+        #masInformacionImage {
+            width: 100%; /* Ajustar el ancho según sea necesario */
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        
+
+
+       
+    
 
         
     </style>
@@ -320,13 +432,37 @@
     </header>
 
     <div id="Presentación">
-        <h3>Sobre mí</h3>
-        <p>¡Hola! Me llamo Isidora y estoy en cuarto año de diseño en la Universidad Católica.</p>
+       
+    
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flower3" viewBox="0 0 16 16">
+         <path d="M11.424 8c.437-.052.811-.136 1.04-.268a2 2 0 0 0-2-3.464c-.229.132-.489.414-.752.767C9.886 4.63 10 4.264 10 4a2 2 0 1 0-4 0c0 .264.114.63.288 1.035-.263-.353-.523-.635-.752-.767a2 2 0 0 0-2 3.464c.229.132.603.216 1.04.268-.437.052-.811.136-1.04.268a2 2 0 1 0 2 3.464c.229-.132.489-.414.752-.767C6.114 11.37 6 11.736 6 12a2 2 0 1 0 4 0c0-.264-.114-.63-.288-1.035.263.353.523.635.752.767a2 2 0 1 0 2-3.464c-.229-.132-.603-.216-1.04-.268zM9 4a1.468 1.468 0 0 1-.045.205c-.039.132-.1.295-.183.484a12.88 12.88 0 0 1-.637 1.223L8 6.142a21.73 21.73 0 0 1-.135-.23 12.88 12.88 0 0 1-.637-1.223 4.216 4.216 0 0 1-.183-.484A1.473 1.473 0 0 1 7 4a1 1 0 1 1 2 0M3.67 5.5a1 1 0 0 1 1.366-.366 1.472 1.472 0 0 1 .156.142c.094.1.204.233.326.4.245.333.502.747.742 1.163l.13.232a21.86 21.86 0 0 1-.265.002 12.88 12.88 0 0 1-1.379-.06 4.214 4.214 0 0 1-.51-.083 1.47 1.47 0 0 1-.2-.064A1 1 0 0 1 3.67 5.5m1.366 5.366a1 1 0 0 1-1-1.732c.001 0 .016-.008.047-.02.037-.013.087-.028.153-.044.134-.032.305-.06.51-.083a12.88 12.88 0 0 1 1.379-.06c.09 0 .178 0 .266.002a21.82 21.82 0 0 1-.131.232c-.24.416-.497.83-.742 1.163a4.1 4.1 0 0 1-.327.4 1.483 1.483 0 0 1-.155.142zM9 12a1 1 0 0 1-2 0 1.476 1.476 0 0 1 .045-.206c.039-.131.1-.294.183-.483.166-.378.396-.808.637-1.223L8 9.858l.135.23c.241.415.47.845.637 1.223.083.19.144.352.183.484A1.338 1.338 0 0 1 9 12m3.33-6.5a1 1 0 0 1-.366 1.366 1.478 1.478 0 0 1-.2.064c-.134.032-.305.06-.510.083-.412.045-.898.061-1.379.06-.09 0-.178 0-.266-.002l.131-.232c.24-.416.497-.83.742-1.163a4.1 4.1 0 0 1 .327-.4c.046-.05.085-.086.114-.11.026-.022.04-.03.041-.032a1 1 0 0 1 1.366.366zm-1.366 5.366a1.494 1.494 0 0 1-.155-.141 4.225 4.225 0 0 1-.327-.4A12.88 12.88 0 0 1 9.74 9.16a22 22 0 0 1-.13-.232l.265-.002c.48-.001.967.015 1.379.06.205.023.376.051.51.083.066.016.116.031.153.044l.048.02a1 1 0 1 1-1 1.732zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+        </svg>
+        <h3 class="subtitulo-seccion">Sobre mí</h3>
+        <p>¡Hola! Me llamo Isidora y estoy en cuarto año de diseño en la Universidad Católica. </p>
+
+        <!-- Botón para más información -->
+        <button id="masInformacionBtn" onclick="openMasInformacionModal()">Aquí puedes encontrar más información</button>
+    </div>
+
+    <!-- Modal para más información -->
+    <div id="modalMasInformacion">
+        <div id="modalContentMasInformacion">
+            <span id="modalCloseMasInformacion" onclick="closeMasInformacionModal()">&times;</span>
+            <img id="masInformacionImage" src="https://raw.githubusercontent.com/Isidoramunoz/imunoz/main/Presentaci%C3%B3n%20cv%20(1)%20(1).jpg" alt="Más Información">
+            <!-- Puedes cambiar la URL de la imagen según sea necesario -->
+        </div>
     </div>
 
 
-    <div id="Proyectos">
-        <h3>Proyectos Recientes</h3>
+    
+
+
+
+    <div id="Proyectos">      
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flower3" viewBox="0 0 16 16">
+         <path d="M11.424 8c.437-.052.811-.136 1.04-.268a2 2 0 0 0-2-3.464c-.229.132-.489.414-.752.767C9.886 4.63 10 4.264 10 4a2 2 0 1 0-4 0c0 .264.114.63.288 1.035-.263-.353-.523-.635-.752-.767a2 2 0 0 0-2 3.464c.229.132.603.216 1.04.268-.437.052-.811.136-1.04.268a2 2 0 1 0 2 3.464c.229-.132.489-.414.752-.767C6.114 11.37 6 11.736 6 12a2 2 0 1 0 4 0c0-.264-.114-.63-.288-1.035.263.353.523.635.752.767a2 2 0 1 0 2-3.464c-.229-.132-.603-.216-1.04-.268zM9 4a1.468 1.468 0 0 1-.045.205c-.039.132-.1.295-.183.484a12.88 12.88 0 0 1-.637 1.223L8 6.142a21.73 21.73 0 0 1-.135-.23 12.88 12.88 0 0 1-.637-1.223 4.216 4.216 0 0 1-.183-.484A1.473 1.473 0 0 1 7 4a1 1 0 1 1 2 0M3.67 5.5a1 1 0 0 1 1.366-.366 1.472 1.472 0 0 1 .156.142c.094.1.204.233.326.4.245.333.502.747.742 1.163l.13.232a21.86 21.86 0 0 1-.265.002 12.88 12.88 0 0 1-1.379-.06 4.214 4.214 0 0 1-.51-.083 1.47 1.47 0 0 1-.2-.064A1 1 0 0 1 3.67 5.5m1.366 5.366a1 1 0 0 1-1-1.732c.001 0 .016-.008.047-.02.037-.013.087-.028.153-.044.134-.032.305-.06.51-.083a12.88 12.88 0 0 1 1.379-.06c.09 0 .178 0 .266.002a21.82 21.82 0 0 1-.131.232c-.24.416-.497.83-.742 1.163a4.1 4.1 0 0 1-.327.4 1.483 1.483 0 0 1-.155.142zM9 12a1 1 0 0 1-2 0 1.476 1.476 0 0 1 .045-.206c.039-.131.1-.294.183-.483.166-.378.396-.808.637-1.223L8 9.858l.135.23c.241.415.47.845.637 1.223.083.19.144.352.183.484A1.338 1.338 0 0 1 9 12m3.33-6.5a1 1 0 0 1-.366 1.366 1.478 1.478 0 0 1-.2.064c-.134.032-.305.06-.510.083-.412.045-.898.061-1.379.06-.09 0-.178 0-.266-.002l.131-.232c.24-.416.497-.83.742-1.163a4.1 4.1 0 0 1 .327-.4c.046-.05.085-.086.114-.11.026-.022.04-.03.041-.032a1 1 0 0 1 1.366.366zm-1.366 5.366a1.494 1.494 0 0 1-.155-.141 4.225 4.225 0 0 1-.327-.4A12.88 12.88 0 0 1 9.74 9.16a22 22 0 0 1-.13-.232l.265-.002c.48-.001.967.015 1.379.06.205.023.376.051.51.083.066.016.116.031.153.044l.048.02a1 1 0 1 1-1 1.732zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+        </svg>
+        <h3 class="subtitulo-seccion">Proyectos Recientes</h3>
         <p>A continuación puedes ver una selección de proyectos que he realizado a lo largo de mi carrera universitaria.</p>
 
         <!-- Tarjetas de proyectos -->
@@ -373,7 +509,7 @@
     <script>
         
 async function loadProjects() {
-    const response = await fetch('https://raw.githubusercontent.com/Isidoramunoz/Dnm-12/main/Portafolioprueba.json');
+    const response = await fetch('https://raw.githubusercontent.com/Isidoramunoz/imunoz/main/Portafolio.json');
     const projects = await response.json();
 
     const projectContainer = document.getElementById('project-container');
@@ -384,82 +520,77 @@ async function loadProjects() {
     });
 }
 
-
 function createProjectCard(project) {
     const card = document.createElement('div');
     card.className = 'project-card';
 
-    
     const imgContainer = document.createElement('div');
     imgContainer.className = 'project-image-container';
 
-    
     if (project.fotos && project.fotos.length > 0) {
         const imgElement = document.createElement('img');
-        imgElement.src = project.fotos[0];
+        imgElement.src = project.fotos[0]; // Mostrar la primera foto
         imgElement.alt = project.nombre;
         imgElement.onerror = () => {
-            console.error(`Error al cargar la imagen para el proyecto: ${project.nombre}`);
-            
+            console.error(`Error al cargar la primera imagen para el proyecto: ${project.nombre}`);
         };
         imgContainer.appendChild(imgElement);
+
+        // Agregar un evento click al contenedor de la imagen para abrir el modal
+        imgContainer.addEventListener('click', () => openModal(project));
     } else {
         console.warn(`El proyecto "${project.nombre}" no tiene imágenes definidas.`);
     }
-    const nameElement = document.createElement('h4');
-    const abstractElement = document.createElement('p');
 
-    nameElement.textContent = project.nombre;
-    abstractElement.textContent = project.abstract;
-
-  
     card.appendChild(imgContainer);
 
-   
+    const nameElement = document.createElement('h4');
+    nameElement.textContent = project.nombre;
+
+    const abstractElement = document.createElement('p');
+    abstractElement.textContent = project.abstract;
+
     card.appendChild(nameElement);
     card.appendChild(abstractElement);
 
-    card.addEventListener('click', () => openModal(project));
-
     return card;
 }
-
-
-    function openModal(project) {
+function openModal(project) {
     const modal = document.getElementById('myModal');
     const modalContent = document.getElementById('modal-content');
 
-   
+    // Limpiar el contenido del modal antes de agregar el nuevo proyecto
     modalContent.innerHTML = '';
 
-    
-    modalContent.innerHTML += `<h2>${project.nombre}</h2>`;
+    // Crear elementos para mostrar la segunda imagen en el modal
+    const modalImageContainer2 = document.createElement('div');
+    modalImageContainer2.className = 'project-image-container-modal';
 
-    
-    if (project.texto) {
-        modalContent.innerHTML += `<p>${project.texto}</p>`;
+    if (project.fotos && project.fotos.length > 1) {
+        const modalImg2 = document.createElement('img');
+        modalImg2.src = project.fotos[1]; // Mostrar la segunda foto
+        modalImg2.alt = project.nombre;
+        modalImageContainer2.appendChild(modalImg2);
     } else {
-        console.warn(`El proyecto "${project.nombre}" no tiene texto definido.`);
+        console.error(`Error al cargar la primera imagen para el proyecto: ${project.nombre}`);
+
     }
 
-    if (project.fotos && project.fotos.length > 0) {
-        const photoContainer = document.createElement('div');
-        photoContainer.className = 'project-image-container-modal';
+    const projectNameElement = document.createElement('h2');
+    projectNameElement.textContent = project.nombre;
 
-        project.fotos.forEach(photo => {
-            const img = document.createElement('img');
-            img.src = photo;
-            img.alt = project.nombre;
-            photoContainer.appendChild(img);
-        });
+    const textElement = document.createElement('p');
+    textElement.textContent = project.texto; // Mostrar el texto del proyecto
 
-        modalContent.appendChild(photoContainer);
-    } else {
-        console.warn(`El proyecto "${project.nombre}" no tiene imágenes definidas.`);
-    }
+    // Agregar elementos al contenido del modal
+    modalContent.appendChild(projectNameElement);
+    modalContent.appendChild(textElement);
+    modalContent.appendChild(modalImageContainer2);
 
+    // Mostrar el modal
     modal.style.display = 'block';
 }
+
 
 
 function closeModal() {
@@ -471,6 +602,19 @@ function closeModal() {
 loadProjects();
 
     </script>
+
+    <script>
+        function openMasInformacionModal() {
+            const modal = document.getElementById('modalMasInformacion');
+            modal.style.display = 'block';
+        }
+
+        function closeMasInformacionModal() {
+            const modal = document.getElementById('modalMasInformacion');
+            modal.style.display = 'none';
+        }
+    </script>
+
 </body>
 
 </html>
